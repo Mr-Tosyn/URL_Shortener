@@ -5,6 +5,7 @@ import urllib.parse
 import requests
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles 
+from fastapi.templating import Jinja2Templates
 import urllib.parse
 import secrets
 import string
@@ -16,6 +17,10 @@ from starlette.responses import RedirectResponse
      
 # Create the router
 url_shortener = APIRouter()
+
+
+templates = Jinja2Templates(directory="templates")
+general_pages_router = APIRouter()
 
 # Create the database
 mock_db_operations = MockDBOperations()
