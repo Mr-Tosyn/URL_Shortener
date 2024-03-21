@@ -20,7 +20,7 @@ url_shortener = APIRouter()
 
 
 templates = Jinja2Templates(directory="templates")
-general_pages_router = APIRouter()
+#general_pages_router = APIRouter()
 
 # Create the database
 mock_db_operations = MockDBOperations()
