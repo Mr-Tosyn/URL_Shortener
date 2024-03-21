@@ -1,10 +1,10 @@
-**ALTSCHOOL CAPSTONE PROJECT**
+#ALTSCHOOL CAPSTONE PROJECT#
 
 The AltSchool Capstone Project is a comprehensive educational project with various innovative features. 
 Scissor url shorten is an open source url shortener written in python. It is a simple and easy to use url shortener. 
 It's a free and open source url shortener, making them more manageable and easier to share.
 
-**Features**
+##Features##
 **URL Shortening:** Users can input a long URL and obtain a shortened link that redirects to the original URL.
 
 **Custom Short URLs:** The app supports custom short URLs, allowing users to personalize the shortened links.
