@@ -1,4 +1,4 @@
-# ALTSCHOOL CAPSTONE PROJECT#
+# ALTSCHOOL CAPSTONE PROJECT
 
 The AltSchool Capstone Project is a comprehensive educational project with various innovative features. 
 Scissor url shorten is an open source url shortener written in python. It is a simple and easy to use url shortener. 
@@ -15,26 +15,26 @@ It's a free and open source url shortener, making them more manageable and easie
 
 ## Useful Commands
 
-# For creating Python virtual environments
+## For creating Python virtual environments
     Python -m venv venv
     source venv/scripts/activate
 
-# FastAPI installation
+## FastAPI installation
     pip install fastapi
     pip install uvicorn
 
-# command to run the application in local
+## command to run the application in local
     uvicorn main:app --reload
 
-# Install the requirements files
+## Install the requirements files
     pip install -r requirements.txt
 
-# For removing python cache files
+## For removing python cache files
     pyclean
 
 
-**Contributing**
+# Contributing
 Contributions to the AltSchool Capstone Project and the URL Shorten Clone Python App are welcome! If you encounter any bugs, have feature requests, or would like to contribute code, please open an issue or submit a pull request to this repository. Your contributions will help improve the functionality and usability of the application.
 
-**License**
+# **License**
 This project is licensed under the MIT License. You are free to use, modify, and distribute the code as per the terms of the license.
