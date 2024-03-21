@@ -34,6 +34,7 @@ url_shortener.mount("/static", StaticFiles(directory="static"), name="static")
 
 @url_shortener.post("/create", response_model=CreateUrlShortenerResponse)
 async def Enter_URL(shortner: CreateUrlShortener):
+    #Validate URL
     async def validate_url(url: str):
         parsed_url = urllib.parse.urlparse(url)
         if not all([parsed_url.scheme, parsed_url.netloc]):
@@ -44,6 +45,7 @@ async def Enter_URL(shortner: CreateUrlShortener):
     except ValidationError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
+    #Shorten URL
     short_url = ""
     if validated_url:
         short_url_length = 7
@@ -72,7 +74,7 @@ async def Fetch_History():
     # Return the list
     return arr
 
-
+#Generate and download QRcode
 @url_shortener.get("/generate_qr_code")
 def generate_qr_code(url:str):
     qr = qrcode.QRCode(version=1, box_size=5, border=5)
