@@ -34,6 +34,7 @@ It's a free and open source url shortener, making them more manageable and easie
 
 
 # Contributing
+
 Contributions to the AltSchool Capstone Project and the URL Shorten Clone Python App are welcome! If you encounter any bugs, have feature requests, or would like to contribute code, please open an issue or submit a pull request to this repository. Your contributions will help improve the functionality and usability of the application.
 
 **License**
